@@ -1,107 +1,75 @@
-/* Font imitating the one in pictures */
-* {
-	font-family: 'Pangolin', cursive;
+@font-face
+{
+	font-family: arial, sans-serif;
+	src: url("Point Soft Semi Bold.otf") ;
+}
+body {
+  font-size: 16px;
+  color: rgba(34, 33, 33, 0.884);
+  background-color:white;
+  font-family: pointsoft;
 }
 
-/* Define width and background-color of navbar */
-.navbar {
-	margin-left: -15px;
-	margin-right: -15px;
-	background-color: #C1C1C1;
+#header-nav {
+  background-color:#999999;
+  border-radius: 0;
+  border: 1px;
+  min-height: 70px;
 }
 
-/* Define color of text elements in navbar */
-.navbar-default .navbar-brand {
-	color: black;
+.navbar-brand h1 {
+  font-family: pointsoft;
+  color: black;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: .75;
 }
 
-/* Define color of drawing elements in navbar */
-.navbar-default .navbar-toggle {
-  border-color: black; /* for the rectangular part */
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: black; /* for the three lines in rectangle */
-}
-/* End of define color of drawing elements in navbar */
-
-/* Define height of header in navbar */
-.navbar-header {
-	height: 75px;
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
-/* Define font of "Food, LLC" and placement inside navbar */
-.navbar-brand {
-	padding-left: 25px;
-	padding-top: 25px;  /*aprox. centering in navbar */
-	padding-bottom: 0px;
-	font-size: 36px;
+#nav-list a {
+  color:black;
+  font-weight: bold;
 }
 
-/* Define placement (vertical centering by giving some top margin) to the navbar button  */
-.navbar-toggle {
-	margin-top: 17px;
+#nav-list a:hover {
+  background:whitesmoke;
 }
 
-/* Fix appearence of submenu */
-/* No margin on top of Chiken or after Sushi */
-ul.nav {
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-/* Ruler between Chicken-Beef and Beef-Sushi  */
-hr {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	border: 0;
-	border-top: 1px solid black;
-	width: 99%; /* does not touch the border (in my opinion from picture of excercise) */
-}
-/* Color background, padding and border for "Chicken-Beef-Sushi"  */
-.navbar-default .navbar-nav > li > a {
-	color: black;
-	background-color: white;
-	padding: 0px;
-}
-/* Border around the "triad" Chicken-Beef-Sushi  */
-div#hidden-btn.navbar-collapse.collapse.in {
-	border: 1px solid black;
-}
-/* Remove border around the "triad" Chicken-Beef-Sushi in tablets and desktops */
-@media (min-width: 768px) {
-	div#hidden-btn.navbar-collapse.collapse.in {
-		border: 1px solid #C1C1C1;
-	}
-}
-/* End of fix appearence of submenu */
-
-/* Define margin of "Our menu" heading (centering between navbar and text)*/
-h1 {
-	margin-bottom: 40px;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
 }
 
-/* Min height as defined in excercise, background color same as navbar  */
-section {
-	min-height: 1000px;
-	background-color: #C1C1C1;
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
 }
 
-/* Padging and margin of "Chicken" heading */
-h2 {
-	padding-top: 10px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+#page-title {
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-/* Padding and font size of main text  */
-p {
-	padding: 0 1em 1em 1em;
-	font-size: 16px;
+#main-text {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* Padding values defined to much the picture of mobile "look" */
-@media (max-width: 767px) {
-	.col-xs-12 {
-		padding-left: 80px;
-		padding-right: 80px;
-	}
+.text-background {
+  height: auto;
+  padding: 20px 40px 20px 40px;
+  background-color:#999999;
+  overflow: hidden;
+}
+
+h3 {
+  font-weight: bold;
+}
+.footer-copyright{
+  padding: 50px;
 }
